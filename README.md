@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 Nativity Prep School Alumni Database
 
-## Getting Started
+A secure, internal web application for Nativity Prep School to track graduate information, College Promise scholarship disbursements, and outreach activity. This tool replaces the current Excel-based process with a structured, searchable, and scalable system.
 
-First, run the development server:
+## 📌 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Nativity Prep’s Graduate Support Team maintains long-term engagement with alumni through mentorship, scholarships, and outreach. This application helps the team:
+
+-   Track student academic and employment histories
+-   Manage College Promise Program participation and payments
+-   Log communication and outreach efforts
+-   Export data for reports, audits, or donor updates
+
+## 🧭 Features
+
+-   Store graduate profiles in a secure, centralized database
+-   Assign graduates to their respective Class (e.g., “Class of 2023”)
+-   Log College Promise scholarship payments and totals
+-   Maintain outreach logs per graduate
+-   Provide internal-only access with secure authentication
+-   Allow data exports in CSV format
+-   Deploy a functional and responsive MVP in ~8–10 weeks (solo dev)
+
+## 🛠️ Tech Stack
+
+-   **Framework**: [Next.js](https://nextjs.org/)
+-   **Langage**: [TypeScript](https://www.typescriptlang.org/)
+-   **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Database:** [SQLite (MVP)](https://www.sqlite.org/) → [PostgreSQL (for production)](https://www.postgresql.org/)
+-   **Auth:** [Clerk](https://clerk.dev/) (or [Better Auth](https://betterstack.io/auth))
+-   **Deployment:** [Vercel](https://vercel.com/)
+
+## 🚀 Getting Started
+
+### 1. Clone this repository
+
+```shell
+git clone https://github.com/jharikr/nativity-alumni-db.git
+cd nativity-alumni-db
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Start the development server
 
-## Learn More
+```shell
+ pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is for internal use only. It is **not licensed** for public deployment, redistribution, or commercial use.
